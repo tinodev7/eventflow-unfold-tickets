@@ -61,7 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// EventFlow brand colors
+				'brand-green': 'hsl(var(--brand-green))',
+				'brand-green-hover': 'hsl(var(--brand-green-hover))',
+				'brand-purple': 'hsl(var(--brand-purple))',
+				'brand-orange': 'hsl(var(--brand-orange))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
