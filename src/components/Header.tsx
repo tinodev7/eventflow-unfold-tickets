@@ -1,4 +1,4 @@
-import { Search, Menu } from "lucide-react";
+import { Search, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -59,14 +59,27 @@ export function Header() {
             </div>
           </div>
 
-          {/* Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" className="text-foreground hover:text-brand-green">
-              Log In
-            </Button>
-            <Button className="bg-brand-green hover:bg-brand-green-hover text-white font-medium">
-              Sign Up
-            </Button>
+          {/* Demo User Dropdown */}
+          <div className="hidden md:flex items-center">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="text-foreground hover:text-brand-green gap-2">
+                  <User className="w-5 h-5" />
+                  Demo User
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-48 bg-popover/95 backdrop-blur-md border border-white/10">
+                <DropdownMenuItem className="text-foreground hover:text-brand-green cursor-pointer">
+                  My Profile
+                </DropdownMenuItem>
+                <DropdownMenuItem className="text-foreground hover:text-brand-green cursor-pointer">
+                  My Tickets
+                </DropdownMenuItem>
+                <DropdownMenuItem className="text-foreground hover:text-brand-green cursor-pointer">
+                  Logout
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Mobile Menu */}
