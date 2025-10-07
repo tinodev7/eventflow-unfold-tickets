@@ -1,4 +1,5 @@
 import { EventCard } from './EventCard';
+import comedyNightImage from '@/assets/comedy-night.jpg';
 
 interface EventCardProps {
   title: string;
@@ -52,7 +53,7 @@ const mockEvents: EventCardProps[] = [
     date: new Date('2025-08-30'),
     location: "Madison Square Garden, NYC",
     price: 125,
-    imageUrl: "https://images.unsplash.com/photo-1558617048-fcd79c2cc7a6?w=800&h=600&fit=crop",
+    imageUrl: comedyNightImage,
     category: "Comedy",
     attendees: 20000
   },
